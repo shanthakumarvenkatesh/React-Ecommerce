@@ -15,7 +15,7 @@ const App = () => {
       setCartItems(cartItems.map((item) => item.id === product.id ? { ...ProductExist, quantity: ProductExist.quantity + 1 } : item))
 
     } else {
-      setCartItems([...cartItems, { ...product, qu: 1 }])
+      setCartItems([...cartItems, { ...product, quantity: 1 }])
     }
   }
   const handleRemoveProduct = (product) => {
